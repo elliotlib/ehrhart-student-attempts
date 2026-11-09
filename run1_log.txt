@@ -1,0 +1,78 @@
+WARNING:root:libtpu.so and TPU device found. Setting PJRT_DEVICE=TPU.
+The tokenizer you are loading from '/home/alber/spark_chat/model' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 52.28it/s]
+chips 4
+loaded 216 lora tensors, merged 108 layers
+mode=lora attempts=8 prompt_tokens=461 P=512 L=33280 temp=0.7
+/home/alber/run_ehrhart.py:78: DeprecationWarning: Use torch_xla.sync instead
+  xm.mark_step()
+prefill 25s
+/home/alber/run_ehrhart.py:93: DeprecationWarning: Use torch_xla.sync instead
+  xm.mark_step()
+/home/alber/run_ehrhart.py:113: DeprecationWarning: Use torch_xla.sync instead
+  xm.mark_step()
+tok 512/32768 175s 2.92 tok/s/attempt done=0/8
+tok 1024/32768 306s 3.35 tok/s/attempt done=0/8
+tok 1536/32768 436s 3.52 tok/s/attempt done=0/8
+tok 2048/32768 567s 3.61 tok/s/attempt done=0/8
+tok 2560/32768 697s 3.67 tok/s/attempt done=0/8
+tok 3072/32768 827s 3.71 tok/s/attempt done=0/8
+tok 3584/32768 958s 3.74 tok/s/attempt done=0/8
+tok 4096/32768 1089s 3.76 tok/s/attempt done=0/8
+tok 4608/32768 1219s 3.78 tok/s/attempt done=0/8
+tok 5120/32768 1350s 3.79 tok/s/attempt done=0/8
+tok 5632/32768 1480s 3.80 tok/s/attempt done=0/8
+tok 6144/32768 1611s 3.81 tok/s/attempt done=0/8
+tok 6656/32768 1742s 3.82 tok/s/attempt done=0/8
+tok 7168/32768 1872s 3.83 tok/s/attempt done=0/8
+tok 7680/32768 2002s 3.84 tok/s/attempt done=0/8
+tok 8192/32768 2133s 3.84 tok/s/attempt done=0/8
+tok 8704/32768 2263s 3.85 tok/s/attempt done=0/8
+tok 9216/32768 2394s 3.85 tok/s/attempt done=0/8
+tok 9728/32768 2525s 3.85 tok/s/attempt done=0/8
+tok 10240/32768 2655s 3.86 tok/s/attempt done=0/8
+tok 10752/32768 2786s 3.86 tok/s/attempt done=0/8
+tok 11264/32768 2916s 3.86 tok/s/attempt done=0/8
+tok 11776/32768 3046s 3.87 tok/s/attempt done=0/8
+tok 12288/32768 3177s 3.87 tok/s/attempt done=0/8
+tok 12800/32768 3307s 3.87 tok/s/attempt done=0/8
+tok 13312/32768 3438s 3.87 tok/s/attempt done=0/8
+tok 13824/32768 3569s 3.87 tok/s/attempt done=0/8
+tok 14336/32768 3699s 3.88 tok/s/attempt done=0/8
+tok 14848/32768 3830s 3.88 tok/s/attempt done=0/8
+tok 15360/32768 3961s 3.88 tok/s/attempt done=0/8
+tok 15872/32768 4092s 3.88 tok/s/attempt done=0/8
+tok 16384/32768 4222s 3.88 tok/s/attempt done=0/8
+tok 16896/32768 4353s 3.88 tok/s/attempt done=0/8
+tok 17408/32768 4484s 3.88 tok/s/attempt done=0/8
+tok 17920/32768 4615s 3.88 tok/s/attempt done=0/8
+tok 18432/32768 4745s 3.88 tok/s/attempt done=0/8
+tok 18944/32768 4876s 3.89 tok/s/attempt done=0/8
+tok 19456/32768 5007s 3.89 tok/s/attempt done=0/8
+tok 19968/32768 5137s 3.89 tok/s/attempt done=0/8
+tok 20480/32768 5268s 3.89 tok/s/attempt done=0/8
+tok 20992/32768 5399s 3.89 tok/s/attempt done=0/8
+tok 21504/32768 5530s 3.89 tok/s/attempt done=0/8
+tok 22016/32768 5660s 3.89 tok/s/attempt done=0/8
+tok 22528/32768 5791s 3.89 tok/s/attempt done=0/8
+tok 23040/32768 5921s 3.89 tok/s/attempt done=0/8
+tok 23552/32768 6051s 3.89 tok/s/attempt done=0/8
+tok 24064/32768 6182s 3.89 tok/s/attempt done=0/8
+tok 24576/32768 6313s 3.89 tok/s/attempt done=0/8
+tok 25088/32768 6443s 3.89 tok/s/attempt done=0/8
+tok 25600/32768 6573s 3.89 tok/s/attempt done=0/8
+tok 26112/32768 6704s 3.90 tok/s/attempt done=0/8
+tok 26624/32768 6834s 3.90 tok/s/attempt done=0/8
+tok 27136/32768 6964s 3.90 tok/s/attempt done=0/8
+tok 27648/32768 7095s 3.90 tok/s/attempt done=0/8
+tok 28160/32768 7225s 3.90 tok/s/attempt done=0/8
+tok 28672/32768 7356s 3.90 tok/s/attempt done=0/8
+tok 29184/32768 7487s 3.90 tok/s/attempt done=0/8
+tok 29696/32768 7618s 3.90 tok/s/attempt done=0/8
+tok 30208/32768 7748s 3.90 tok/s/attempt done=0/8
+tok 30720/32768 7879s 3.90 tok/s/attempt done=0/8
+tok 31232/32768 8009s 3.90 tok/s/attempt done=0/8
+tok 31744/32768 8140s 3.90 tok/s/attempt done=0/8
+tok 32256/32768 8271s 3.90 tok/s/attempt done=0/8
+tok 32768/32768 8401s 3.90 tok/s/attempt done=0/8
+DONE 8401s

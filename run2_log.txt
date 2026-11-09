@@ -1,0 +1,142 @@
+WARNING:root:libtpu.so and TPU device found. Setting PJRT_DEVICE=TPU.
+The tokenizer you are loading from '/home/alber/spark_chat/model' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 52.13it/s]
+chips 4
+loaded 216 lora tensors, merged 108 layers
+mode=lora attempts=4 prompt_tokens=461 P=512 L=80000 temp=0.7
+/home/alber/run_ehrhart.py:80: DeprecationWarning: Use torch_xla.sync instead
+  xm.mark_step()
+prefill 26s
+/home/alber/run_ehrhart.py:95: DeprecationWarning: Use torch_xla.sync instead
+  xm.mark_step()
+/home/alber/run_ehrhart.py:115: DeprecationWarning: Use torch_xla.sync instead
+  xm.mark_step()
+tok 512/79488 208s 2.46 tok/s/attempt done=0/4
+tok 1024/79488 363s 2.82 tok/s/attempt done=0/4
+tok 1536/79488 518s 2.96 tok/s/attempt done=0/4
+tok 2048/79488 673s 3.04 tok/s/attempt done=0/4
+tok 2560/79488 828s 3.09 tok/s/attempt done=0/4
+tok 3072/79488 983s 3.13 tok/s/attempt done=0/4
+tok 3584/79488 1137s 3.15 tok/s/attempt done=0/4
+tok 4096/79488 1292s 3.17 tok/s/attempt done=0/4
+tok 4608/79488 1447s 3.18 tok/s/attempt done=0/4
+tok 5120/79488 1602s 3.20 tok/s/attempt done=0/4
+tok 5632/79488 1757s 3.21 tok/s/attempt done=0/4
+tok 6144/79488 1911s 3.21 tok/s/attempt done=0/4
+tok 6656/79488 2066s 3.22 tok/s/attempt done=0/4
+tok 7168/79488 2221s 3.23 tok/s/attempt done=0/4
+tok 7680/79488 2376s 3.23 tok/s/attempt done=0/4
+tok 8192/79488 2531s 3.24 tok/s/attempt done=0/4
+tok 8704/79488 2686s 3.24 tok/s/attempt done=0/4
+tok 9216/79488 2842s 3.24 tok/s/attempt done=0/4
+tok 9728/79488 2997s 3.25 tok/s/attempt done=0/4
+tok 10240/79488 3153s 3.25 tok/s/attempt done=0/4
+tok 10752/79488 3309s 3.25 tok/s/attempt done=0/4
+tok 11264/79488 3464s 3.25 tok/s/attempt done=0/4
+tok 11776/79488 3620s 3.25 tok/s/attempt done=0/4
+tok 12288/79488 3775s 3.26 tok/s/attempt done=0/4
+tok 12800/79488 3930s 3.26 tok/s/attempt done=0/4
+tok 13312/79488 4085s 3.26 tok/s/attempt done=0/4
+tok 13824/79488 4240s 3.26 tok/s/attempt done=0/4
+tok 14336/79488 4396s 3.26 tok/s/attempt done=0/4
+tok 14848/79488 4551s 3.26 tok/s/attempt done=0/4
+tok 15360/79488 4706s 3.26 tok/s/attempt done=0/4
+tok 15872/79488 4861s 3.26 tok/s/attempt done=0/4
+tok 16384/79488 5017s 3.27 tok/s/attempt done=0/4
+tok 16896/79488 5172s 3.27 tok/s/attempt done=0/4
+tok 17408/79488 5327s 3.27 tok/s/attempt done=0/4
+tok 17920/79488 5482s 3.27 tok/s/attempt done=0/4
+tok 18432/79488 5637s 3.27 tok/s/attempt done=0/4
+tok 18944/79488 5792s 3.27 tok/s/attempt done=0/4
+tok 19456/79488 5948s 3.27 tok/s/attempt done=0/4
+tok 19968/79488 6104s 3.27 tok/s/attempt done=0/4
+tok 20480/79488 6260s 3.27 tok/s/attempt done=0/4
+tok 20992/79488 6415s 3.27 tok/s/attempt done=0/4
+tok 21504/79488 6571s 3.27 tok/s/attempt done=0/4
+tok 22016/79488 6727s 3.27 tok/s/attempt done=0/4
+tok 22528/79488 6882s 3.27 tok/s/attempt done=0/4
+tok 23040/79488 7038s 3.27 tok/s/attempt done=0/4
+tok 23552/79488 7193s 3.27 tok/s/attempt done=0/4
+tok 24064/79488 7349s 3.27 tok/s/attempt done=0/4
+tok 24576/79488 7504s 3.27 tok/s/attempt done=0/4
+tok 25088/79488 7660s 3.28 tok/s/attempt done=0/4
+tok 25600/79488 7815s 3.28 tok/s/attempt done=0/4
+tok 26112/79488 7971s 3.28 tok/s/attempt done=0/4
+tok 26624/79488 8126s 3.28 tok/s/attempt done=0/4
+tok 27136/79488 8282s 3.28 tok/s/attempt done=0/4
+tok 27648/79488 8437s 3.28 tok/s/attempt done=0/4
+tok 28160/79488 8592s 3.28 tok/s/attempt done=0/4
+tok 28672/79488 8747s 3.28 tok/s/attempt done=0/4
+tok 29184/79488 8902s 3.28 tok/s/attempt done=0/4
+tok 29696/79488 9058s 3.28 tok/s/attempt done=0/4
+tok 30208/79488 9213s 3.28 tok/s/attempt done=0/4
+tok 30720/79488 9369s 3.28 tok/s/attempt done=0/4
+tok 31232/79488 9524s 3.28 tok/s/attempt done=0/4
+tok 31744/79488 9679s 3.28 tok/s/attempt done=0/4
+tok 32256/79488 9835s 3.28 tok/s/attempt done=0/4
+tok 32768/79488 9990s 3.28 tok/s/attempt done=0/4
+tok 33280/79488 10145s 3.28 tok/s/attempt done=0/4
+tok 33792/79488 10300s 3.28 tok/s/attempt done=0/4
+tok 34304/79488 10457s 3.28 tok/s/attempt done=0/4
+tok 34816/79488 10613s 3.28 tok/s/attempt done=0/4
+tok 35328/79488 10769s 3.28 tok/s/attempt done=0/4
+tok 35840/79488 10924s 3.28 tok/s/attempt done=0/4
+tok 36352/79488 11080s 3.28 tok/s/attempt done=0/4
+tok 36864/79488 11236s 3.28 tok/s/attempt done=0/4
+tok 37376/79488 11391s 3.28 tok/s/attempt done=0/4
+tok 37888/79488 11546s 3.28 tok/s/attempt done=0/4
+tok 38400/79488 11702s 3.28 tok/s/attempt done=0/4
+tok 38912/79488 11858s 3.28 tok/s/attempt done=0/4
+tok 39424/79488 12013s 3.28 tok/s/attempt done=0/4
+tok 39936/79488 12169s 3.28 tok/s/attempt done=0/4
+tok 40448/79488 12324s 3.28 tok/s/attempt done=0/4
+tok 40960/79488 12480s 3.28 tok/s/attempt done=0/4
+tok 41472/79488 12635s 3.28 tok/s/attempt done=0/4
+tok 41984/79488 12790s 3.28 tok/s/attempt done=0/4
+tok 42496/79488 12945s 3.28 tok/s/attempt done=0/4
+tok 43008/79488 13100s 3.28 tok/s/attempt done=0/4
+tok 43520/79488 13255s 3.28 tok/s/attempt done=0/4
+tok 44032/79488 13410s 3.28 tok/s/attempt done=0/4
+tok 44544/79488 13566s 3.28 tok/s/attempt done=0/4
+tok 45056/79488 13722s 3.28 tok/s/attempt done=0/4
+tok 45568/79488 13878s 3.28 tok/s/attempt done=0/4
+tok 46080/79488 14033s 3.28 tok/s/attempt done=0/4
+tok 46592/79488 14188s 3.28 tok/s/attempt done=0/4
+tok 47104/79488 14344s 3.28 tok/s/attempt done=0/4
+tok 47616/79488 14499s 3.28 tok/s/attempt done=0/4
+tok 48128/79488 14655s 3.28 tok/s/attempt done=0/4
+tok 48640/79488 14811s 3.28 tok/s/attempt done=0/4
+tok 49152/79488 14966s 3.28 tok/s/attempt done=0/4
+tok 49664/79488 15122s 3.28 tok/s/attempt done=0/4
+tok 50176/79488 15278s 3.28 tok/s/attempt done=0/4
+tok 50688/79488 15433s 3.28 tok/s/attempt done=0/4
+tok 51200/79488 15589s 3.28 tok/s/attempt done=0/4
+tok 51712/79488 15744s 3.28 tok/s/attempt done=0/4
+tok 52224/79488 15900s 3.28 tok/s/attempt done=0/4
+tok 52736/79488 16056s 3.28 tok/s/attempt done=0/4
+tok 53248/79488 16211s 3.28 tok/s/attempt done=0/4
+tok 53760/79488 16367s 3.28 tok/s/attempt done=0/4
+tok 54272/79488 16522s 3.28 tok/s/attempt done=0/4
+tok 54784/79488 16678s 3.28 tok/s/attempt done=0/4
+tok 55296/79488 16833s 3.28 tok/s/attempt done=0/4
+tok 55808/79488 16988s 3.29 tok/s/attempt done=0/4
+tok 56320/79488 17144s 3.29 tok/s/attempt done=0/4
+tok 56832/79488 17300s 3.29 tok/s/attempt done=0/4
+tok 57344/79488 17455s 3.29 tok/s/attempt done=0/4
+tok 57856/79488 17610s 3.29 tok/s/attempt done=0/4
+tok 58368/79488 17765s 3.29 tok/s/attempt done=0/4
+tok 58880/79488 17921s 3.29 tok/s/attempt done=0/4
+tok 59392/79488 18076s 3.29 tok/s/attempt done=0/4
+tok 59904/79488 18231s 3.29 tok/s/attempt done=0/4
+https://symbolize.stripped_domain/r/?trace=7f67d31959b9,7f67f104251f&map= 
+*** SIGTERM received by PID 748488 (TID 748488) on cpu 62 from PID 773593; stack trace: ***
+PC: @     0x7f67d31959b9  (unknown)  torch::autograd::DifferentiableViewMeta::DifferentiableViewMeta()
+    @     0x7f65a75b47e5       1904  (unknown)
+    @     0x7f67f1042520  (unknown)  (unknown)
+    @     0x5558a92319a8  (unknown)  (unknown)
+    @        0x100000005  1691754864  (unknown)
+    @     0x7f67cf3ef190  (unknown)  (unknown)
+    @ 0x8b485355fc894954  (unknown)  (unknown)
+https://symbolize.stripped_domain/r/?trace=7f67d31959b9,7f65a75b47e4,7f67f104251f,5558a92319a7,100000004,7f67cf3ef18f,8b485355fc894953&map= 
+E1108 16:12:15.135957  748488 coredump_hook.cc:247] RAW: Remote crash gathering disabled for SIGTERM.
+E1108 16:12:15.309771  748488 process_state.cc:808] RAW: Raising signal 15 with default behavior

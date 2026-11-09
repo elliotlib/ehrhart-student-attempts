@@ -1,0 +1,29 @@
+<｜start▁of▁sentence｜><|System|>
+you are a helpful assistant.
+`thinking_effort` guides on how much to think in your thinking channel (not including the response channel), supported values include `low` and `high`.
+Now the system is invoked with `thinking_effort=high`.<｜end▁of▁sentence｜><｜start▁of▁sentence｜><|User|>## Mathematical task
+
+Prove the following theorem.
+
+**Theorem (volume bound for centred convex bodies with a single interior lattice point).**
+Let n >= 1 and let S be a convex compact subset of R^n with non-empty interior such that
+(1) the barycenter of S is the origin, and
+(2) the only point of the lattice Z^n lying in the interior of S is the origin.
+Then  vol(S) <= (n+1)^n / n!.
+
+Lean 4 / Mathlib formulation (Space n := Fin n -> R, normalizedVolume K := (volume K).toReal,
+barycenter K := (normalizedVolume K)^{-1} . integral over K of x dx,
+interiorLatticePoints K := {z : Fin n -> Z | (z : Space n) in interior K}):
+
+```lean
+theorem ehrhart_volume_inequality_for_sets {n : N} (hn : 0 < n)
+    (S : Set (Space n)) (hconvex : Convex R S)
+    (hcompact : IsCompact S) (hinterior : (interior S).Nonempty)
+    (hcentered : barycenter S = 0)
+    (hlattice : interiorLatticePoints S = {0}) :
+    normalizedVolume S <= ((n : R) + 1) ^ n / (n.factorial : R)
+```
+
+Think carefully and at length. Look for a complete argument, check every step, and say explicitly which steps are
+standard facts and which are new. At the end give (a) a rigorous proof split into numbered lemmas with precise
+statements, and (b) a Lean 4 skeleton with one `sorry` per lemma.<｜end▁of▁sentence｜><｜start▁of▁sentence｜><|Bot|><think>
